@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://java.sun.com/xml/ns/javaee" 
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" 
+version="2.5">
+  <display-name>java-expense-reimbursement-server</display-name>
+  
+  <servlet>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<servlet-class>dev.rd.servlets.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+  	<servlet-name>UserServlet</servlet-name>
+  	<servlet-class>dev.rd.servlets.UserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>UserServlet</servlet-name>
+  	<url-pattern>/users</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet>
+  	<servlet-name>ReimbursmentRequestServlet</servlet-name>
+  	<servlet-class>dev.rd.servlets.ReimbursmentRequestServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ReimbursmentRequestServlet</servlet-name>
+  	<url-pattern>/subReqR</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>managerApproveDenyServlet</servlet-name>
+  	<servlet-class>dev.rd.servlets.managerApproveDenyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>managerApproveDenyServlet</servlet-name>
+  	<url-pattern>/reqApproval</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>managerViewAllPendingRequestServlet</servlet-name>
+  	<servlet-class>dev.rd.servlets.managerViewAllPendingRequestServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>managerViewAllPendingRequestServlet</servlet-name>
+  	<url-pattern>/allPending</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>employeeViewPendingServlet</servlet-name>
+  	<servlet-class>dev.rd.servlets.employeeViewPendingServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>employeeViewPendingServlet</servlet-name>
+  	<url-pattern>/pending</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>employeeViewResolvedRequestServlet</servlet-name>
+  	<servlet-class>dev.rd.servlets.employeeViewResolvedRequestServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>employeeViewResolvedRequestServlet</servlet-name>
+  	<url-pattern>/resolved</url-pattern>
+  </servlet-mapping>
+  
+   <filter>
+  	<filter-name>CorsFilter</filter-name>
+  	<filter-class>org.apache.catalina.filters.CorsFilter</filter-class>
+  	<init-param>
+  		<param-name>cors.allowed.origins</param-name>
+  		<param-value>*</param-value>
+  	</init-param>
+  </filter>
+  <filter-mapping>
+  	<filter-name>CorsFilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+
+</web-app>

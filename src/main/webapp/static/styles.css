@@ -1,0 +1,125 @@
+
+/*Login_page.html*/
+.header {
+padding: 30px;
+text-align: center;
+background-color:darkslategrey;
+color: black;
+}
+
+.header h1 {
+    font-size: 40px ;
+}
+
+.header h2 {
+color:papayawhip;
+font-size: large;
+font-style: italic;
+}
+
+p{
+    font-weight: bold;
+
+}
+
+/*login navbar*/
+.custom-navbar ul {
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0;
+    background-color: rgb(42, 41, 41);
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .custom-navbar ul li {
+    display: inline;
+    padding: 20px;
+  }
+  
+  .navlist a {
+    text-align: center;
+  
+    color: rgb(251, 251, 251);
+    text-decoration: none;
+  }
+
+
+
+.footer {
+    text-align: center; /* Center text*/
+    background: #ddd; /* Grey background */
+}
+
+
+
+/*Manager.html.........................................................*/
+
+
+
+#logOutManBtu {
+   
+    font-size:medium;
+    font-style:normal;
+    color:black;
+    
+}
+
+.ApproveDenyPendingRequests{
+    font-size:large;
+    font-style: normal;
+    color:dimgray;
+}
+
+.ViewAllPendingRequests{
+    font-size:large;
+    font-style: normal;
+    color:dimgray;
+}
+
+
+
+
+
+
+
+
+/*Employee.html.........................................................*/  
+#logOutEmpBtu{
+    font-size:medium;
+    font-style: normal;
+    color:black;
+    text-align: right;
+}
+  
+
+.ReimbursementRequest {
+    font-size:large;
+    font-style: normal;
+    color:dimgray;
+    
+}
+
+.ViewPendingRequest{
+    font-size:large;
+    font-style: normal;
+    color:dimgray;
+}
+
+.ResolvedRequest{
+    font-size:large;
+    font-style: normal;
+    color:dimgray;
+}
+
+#viewPendRequestEmpBtu {
+    font-size:medium;
+    color:midnightblue;
+
+}
+
+#viewResolvedRequestEmpBtu {
+    font-size:medium;
+    color:midnightblue;
+
+}
